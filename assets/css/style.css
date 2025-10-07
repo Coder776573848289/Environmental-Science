@@ -1,23 +1,123 @@
-/* style.css */
+/* ==========================================================================
+   Global Styles (Bootstrap-first, About-page aligned)
+   ========================================================================== */
+
+/* Base ------------------------------------------------------------------- */
+html, body {
+	margin: 0;
+	padding: 0;
+}
 body {
-  font-family: Arial, sans-serif;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	color: #212121;
+	background: #FFFFFF;
+	line-height: 1.6;
 }
 
-.hero-card img {
-  height: 200px;
-  object-fit: cover;
+/* Header/Footer color match ---------------------------------------------- */
+/* Keep Bootstrap navbar success color; ensure sticky feel if needed */
+.navbar {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 }
 
+/* Footer matches header (bg-success + text-white) handled by footer.html,
+   but add subtle border and spacing support */
+.site-footer {
+	border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Container spacing helpers ---------------------------------------------- */
+.section {
+	padding: 2rem 0;
+}
+
+/* Links & Buttons --------------------------------------------------------- */
+a {
+	color: #00796B;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #00695C;
+	text-decoration: underline;
+}
+
+/* Index: Slider (Bootstrap carousel) ------------------------------------- */
+#homeSlider {
+	margin-top: 1rem;
+}
+#homeSlider .carousel-item img {
+	width: 100%;
+	height: 480px;            /* Larger but still user-friendly */
+	object-fit: cover;
+}
+@media (max-width: 992px) {
+	#homeSlider .carousel-item img {
+		height: 380px;
+	}
+}
+@media (max-width: 576px) {
+	#homeSlider .carousel-item img {
+		height: 300px;
+	}
+}
+
+/* Index: Six Category Cards ---------------------------------------------- */
+/* Ensure identical card and image sizes */
 .hero-card {
-  transition: transform 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	height: 380px;            /* Uniform card height */
+	border: 1px solid #E0E0E0;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+	transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
 }
 .hero-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+	transform: translateY(-3px);
+	box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+	border-color: #C8E6C9;
+}
+.hero-card .card-img-top {
+	height: 180px;            /* Uniform image height */
+	object-fit: cover;        /* Crop to fill without distortion */
+}
+.hero-card .card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-/* carousel height */
-.carousel-item img {
-  height: 400px;
-  object-fit: cover;
+/* Generic Content Sections (Applies everywhere) -------------------------- */
+.page-title {
+	font-weight: 700;
+}
+
+.content-section h2,
+.section-title {
+	border-left: 5px solid #198754; /* Bootstrap success color */
+	padding-left: 10px;
+	margin-bottom: 12px;
+	font-weight: 600;
+}
+
+/* Lists spacing for readability */
+.content-section ul,
+.content-section ol {
+	margin-left: 20px;
+}
+.content-section li {
+	margin-bottom: 8px;
+}
+
+/* Tables (keeps Bootstrap look but improves spacing) --------------------- */
+.table th, .table td {
+	vertical-align: middle;
+}
+
+/* Utilities --------------------------------------------------------------- */
+.lead {
+	color: #455A64;
 }

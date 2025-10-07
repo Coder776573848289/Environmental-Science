@@ -1,29 +1,60 @@
-.about-page {
-  line-height: 1.8;
-  font-size: 1.05rem;
-}
+/* ==========================================================================
+   About-style Sectioning shared across pages
+   ========================================================================== */
 
-.section-title {
-  border-left: 5px solid #28a745;
-  padding-left: 10px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.about-page ul,
-.about-page ol {
-  margin-left: 25px;
-}
-
-.about-page li {
-  margin-bottom: 10px;
-}
-
-.intro h1 {
-  font-size: 2.5rem;
-}
-
-.intro p {
-  font-size: 1.2rem;
-  color: #555;
-}
+   .about-page,
+   .multidisciplinary-page,
+   .biodiversity-page,
+   .ecology-page,
+   .pollution-page,
+   .resources-page,
+   .communities-page,
+   .updates-page {
+     line-height: 1.8;
+     font-size: 1.05rem;
+   }
+   
+   /* Headings */
+   .page-title {
+     font-size: 2.2rem;
+   }
+   
+   /* Section title stripe (green) */
+   .section-title {
+     border-left: 5px solid #198754; /* Bootstrap success */
+     padding-left: 10px;
+     margin-bottom: 15px;
+     font-weight: 600;
+   }
+   
+   /* Lists spacing */
+   .about-page ul, .about-page ol,
+   .multidisciplinary-page ul, .multidisciplinary-page ol,
+   .biodiversity-page ul, .biodiversity-page ol,
+   .ecology-page ul, .ecology-page ol,
+   .pollution-page ul, .pollution-page ol,
+   .resources-page ul, .resources-page ol,
+   .communities-page ul, .communities-page ol,
+   .updates-page ul, .updates-page ol {
+     margin-left: 25px;
+   }
+   
+   .about-page li,
+   .multidisciplinary-page li,
+   .biodiversity-page li,
+   .ecology-page li,
+   .pollution-page li,
+   .resources-page li,
+   .communities-page li,
+   .updates-page li {
+     margin-bottom: 10px;
+   }
+   
+   /* Intro hero sizing for pages that use it */
+   .intro h1 {
+     font-size: 2.5rem;
+   }
+   .intro p {
+     font-size: 1.2rem;
+     color: #555;
+   }
