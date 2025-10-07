@@ -1,0 +1,38 @@
+/* Biodiversity Page Styling */
+.biodiversity-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.biodiversity-page .page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1b5e20;
+  border-bottom: 3px solid #a5d6a7;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.biodiversity-page .content-section {
+  margin-bottom: 2.5rem;
+}
+
+.biodiversity-page h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2e7d32;
+  border-left: 5px solid #81c784;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+
+.biodiversity-page ul {
+  list-style-type: disc;
+  margin-left: 1.8rem;
+  font-size: 1rem;
+}
+
+.biodiversity-page strong {
+  color: #2e7d32;
+}

@@ -1,0 +1,29 @@
+.about-page {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.section-title {
+  border-left: 5px solid #28a745;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.about-page ul,
+.about-page ol {
+  margin-left: 25px;
+}
+
+.about-page li {
+  margin-bottom: 10px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #555;
+}

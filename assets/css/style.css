@@ -1,0 +1,23 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.hero-card {
+  transition: transform 0.3s ease;
+}
+.hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* carousel height */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}

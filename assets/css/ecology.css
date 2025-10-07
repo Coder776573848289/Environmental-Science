@@ -1,0 +1,53 @@
+/* Ecology Page Styling */
+
+.ecology-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.ecology-page .page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2e7d32;
+  border-bottom: 3px solid #a5d6a7;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.ecology-page .content-section {
+  margin-bottom: 2.5rem;
+}
+
+.ecology-page h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #388e3c;
+  border-left: 5px solid #81c784;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+
+.ecology-page p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.ecology-page ul {
+  list-style-type: disc;
+  margin-left: 1.8rem;
+  font-size: 1rem;
+}
+
+.ecology-page strong {
+  color: #2e7d32;
+}
+
+.ecology-page .diagram-suggestion {
+  background-color: #f1f8e9;
+}
+
+.ecology-page .case-item h5 {
+  color: #2e7d32;
+  font-weight: 600;
+}
